@@ -4,7 +4,7 @@ require('dotenv').config()
 function App() {
 
   return (
-    <div >
+    <div className='app-wall'>
       <Converter />
     </div>
   );
