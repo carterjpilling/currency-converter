@@ -18,9 +18,7 @@ export default function Converter() {
   }, [])
 
   async function getData() {
-    const endpoint = 'latest'
-    await axios.get('http://data.fixer.io/api/' + endpoint + '?access_key=' + '1267e02d9c7c1afd1f157f1cf02819e3').then((res) => {
-      console.log(res.data)
+    await axios.get('http://data.fixer.io/api/latest?access_key=1267e02d9c7c1afd1f157f1cf02819e3').then((res) => {
       setCountry(res.data.rates);
       setCountry2(res.data.rates);
     })
